@@ -1569,7 +1569,7 @@ margin-top: 1.2rem;
 
 
 /* Desktop: make tarjetas larger and align similar to third div layout on wide screens */
-@media (min-width: 1100px) {
+@media (min-width: 1200px) {
   .divContenedorTarj {
     justify-content: center;
   }
@@ -1578,8 +1578,16 @@ margin-top: 1.2rem;
     max-width: none;
   }
   .imagenTarj1Serv img {
-    width: 40%;        /* ~60% smaller than full width on large screens */
+    width: 40%;        /* substantial dimming on large screens */
     max-width: 180px;  /* cap to keep visual balance */
+  }
+}
+
+/* Medium and smaller screens: less aggressive dimming to keep readability */
+@media (max-width: 1199px) {
+  .imagenTarj1Serv img {
+    width: 70%;
+    max-width: 260px;
   }
 }
 
