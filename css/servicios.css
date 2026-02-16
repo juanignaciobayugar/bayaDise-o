@@ -386,7 +386,9 @@ width: 100%;
 .imagenTarj1Serv{
   margin: 0;
   width: 100%;
-  display: block;
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem; /* add side margins to dim the image detail */
 }
 
 .imagenTarj1Serv img {
@@ -1574,6 +1576,10 @@ margin-top: 1.2rem;
   .tarjeta1Serv {
     width: calc(33.333% - 2rem);
     max-width: none;
+  }
+  .imagenTarj1Serv img {
+    width: 40%;        /* ~60% smaller than full width on large screens */
+    max-width: 180px;  /* cap to keep visual balance */
   }
 }
 
