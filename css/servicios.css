@@ -1153,6 +1153,44 @@ margin-top: 1.2rem;
   margin: 0 auto;
 }
 
+/* Pantallas grandes: contener el div1 para que no se vea tan grande */
+@media (min-width: 1400px) {
+  .div1 {
+    padding: 2.5rem 4rem;
+    max-width: 1300px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(25, 193, 206, 0.1);
+    border: 1px solid rgba(25, 193, 206, 0.15);
+  }
+  
+  .div1 .col60 {
+    padding: 1.5rem 2.5rem;
+  }
+  
+  .div1 .col60 h2 {
+    font-size: clamp(1.6rem, 2.2vw, 2rem);
+  }
+  
+  .div1 .col60 h3 {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+  }
+  
+  .div1 .col60 h4 {
+    font-size: clamp(0.9rem, 1.1vw, 1rem);
+  }
+  
+  .div1 .col20 {
+    flex: 0 0 10%;
+    padding: 1.5rem 0.8rem;
+  }
+  
+  .div1 .colRest {
+    flex: 0 0 18%;
+    padding: 1.5rem 0.8rem;
+  }
+}
+
 /* Responsive para div1 - Adaptaciones profesionales */
 @media (max-width: 1024px) {
   .div1 {
