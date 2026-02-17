@@ -539,8 +539,8 @@ font-size: clamp(0.95rem, 1.9vw, 1.3rem);
   background: linear-gradient(135deg, #FFC72C 0%, #FFB700 100%);
 }
 
-/* Responsive para Sesion Bombon - cada div en su propia fila */
-@media (max-width: 900px) {
+/* Responsive para Sesion Bombon - tablet y mobile */
+@media (max-width: 768px) {
   .contenedorBombon {
     flex-direction: column;
     padding: 2rem 1rem;
@@ -578,6 +578,33 @@ font-size: clamp(0.95rem, 1.9vw, 1.3rem);
     height: auto;
     min-height: 20rem;
     padding: 2rem 1.5rem;
+  }
+}
+
+/* Responsive para pantallas muy pequeñas - móviles */
+@media (max-width: 480px) {
+  .contenedorBombon {
+    padding: 1.5rem 0.8rem;
+    gap: 1rem;
+  }
+  
+  .imagenPrincipalBombon .contenedorImagen {
+    max-height: 16rem;
+    padding: 0.5rem;
+  }
+  
+  .imagenDescripcion .contenedorImagen {
+    max-height: 12rem;
+    padding: 0.5rem;
+  }
+  
+  .col303 {
+    max-width: 100%;
+  }
+  
+  .indexContact {
+    min-height: 18rem;
+    padding: 1.5rem 1rem;
   }
 }
 
