@@ -1095,7 +1095,7 @@ margin-top: 1.2rem;
 
 .div2 .card {
   width: 19rem;
-  height: 26rem;
+  min-height: 26rem;
   background: white;
   border-radius: 16px;
   padding: 2rem 1.5rem;
@@ -1116,12 +1116,12 @@ margin-top: 1.2rem;
 
 .div2 .card-title {
   font-family: 'Nunito', Courier, monospace;
-  font-size: 1.39rem;
+  font-size: 1.35rem;
   font-weight: 700;
   color: #2c3e50;
-  margin-bottom: 0.95rem;
+  margin-bottom: 0.9rem;
   position: relative;
-  padding-bottom: 0.8rem;
+  padding-bottom: 0.7rem;
 }
 
 .div2 .card-title::after {
@@ -1138,28 +1138,29 @@ margin-top: 1.2rem;
 
 .div2 .card-img {
   width: 100%;
-  max-width: 250px;
+  max-width: 220px;
   height: auto;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .div2 .card-desc {
   font-family: 'Nunito', Courier, monospace;
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: #555;
-  line-height: 1.6;
-  margin-bottom: 1.05rem;
-  flex-grow: 1;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+  flex-shrink: 0;
 }
 
 .div2 .linea {
   border: none;
-  height: 2px;
+  height: 3px;
   width: 60px;
   background: linear-gradient(90deg, #19C1CE, #17a8b3);
-  margin: 0 auto;
+  margin: auto auto 0 auto;
+  flex-shrink: 0;
 }
 
 /* Pantallas grandes: mantener ancho completo como prierdivS */
