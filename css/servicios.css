@@ -810,32 +810,33 @@ margin-top: 1.2rem;
   flex-wrap: wrap;
   width: 100%;
   min-height: auto;
-  background: linear-gradient(180deg, #e8f9fb 0%, #f5fbfc 30%, #ffffff 100%);
+  background: linear-gradient(180deg, #f0fafc 0%, #f8fbfc 50%, #ffffff 100%);
   padding: 4rem 2rem;
   position: relative;
   overflow: hidden;
 }
 
-/* Decoración sutil */
+/* Línea superior elegante */
 .div1::before {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, #19C1CE 0%, #FF6600 50%, #19C1CE 100%);
+  left: 5%;
+  right: 5%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent 0%, #19C1CE 20%, #FF6600 50%, #19C1CE 80%, transparent 100%);
+  opacity: 0.6;
 }
 
-/* Decoración sutil de fondo */
+/* Decoración de fondo profesional */
 .div1::after {
   content: '';
   position: absolute;
-  bottom: -100px;
-  right: -100px;
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, rgba(25, 193, 206, 0.08) 0%, transparent 70%);
+  top: 10%;
+  right: -5%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(25, 193, 206, 0.05) 0%, transparent 60%);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -849,9 +850,7 @@ margin-top: 1.2rem;
   align-items: center;
   justify-content: center;
   padding: 2rem 1rem;
-  gap: 1rem;
-  background: linear-gradient(180deg, rgba(25, 193, 206, 0.05) 0%, transparent 100%);
-  border-radius: 20px;
+  gap: 1.2rem;
 }
 
 .div1 .col20 .botonera {
@@ -864,24 +863,28 @@ margin-top: 1.2rem;
 }
 
 .div1 .btn {
-  width: 55px;
-  height: 55px;
+  width: 52px;
+  height: 52px;
   border: none;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #19C1CE 0%, #17a8b3 100%);
+  border-radius: 14px;
+  background: linear-gradient(145deg, #1bc8d6 0%, #16a8b3 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 15px rgba(25, 193, 206, 0.3);
+  box-shadow: 
+    0 4px 12px rgba(25, 193, 206, 0.25),
+    0 2px 4px rgba(0, 0, 0, 0.05);
   padding: 0;
 }
 
 .div1 .btn:hover {
-  transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 8px 25px rgba(25, 193, 206, 0.4);
-  background: linear-gradient(135deg, #17a8b3 0%, #149199 100%);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 
+    0 6px 20px rgba(25, 193, 206, 0.35),
+    0 3px 6px rgba(0, 0, 0, 0.08);
+  background: linear-gradient(145deg, #18b4c0 0%, #1599a3 100%);
 }
 
 .div1 .btn img {
@@ -898,22 +901,23 @@ margin-top: 1.2rem;
 .div1 .col60 {
   flex: 1;
   min-width: 300px;
-  padding: 2.5rem 3rem;
+  padding: 3rem 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
 }
 
-/* Línea decorativa sutil a la derecha de col60 */
+/* Separador decorativo sutil */
 .div1 .col60::after {
   content: '';
   position: absolute;
-  top: 20%;
+  top: 15%;
   right: 0;
-  width: 1px;
-  height: 60%;
-  background: linear-gradient(180deg, transparent 0%, rgba(25, 193, 206, 0.3) 50%, transparent 100%);
+  width: 2px;
+  height: 70%;
+  background: linear-gradient(180deg, transparent 0%, rgba(25, 193, 206, 0.2) 30%, rgba(255, 102, 0, 0.15) 70%, transparent 100%);
+  border-radius: 1px;
 }
 
 .div1 .col60 h2 {
@@ -982,24 +986,24 @@ margin-top: 1.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 12px;
-  padding: 2rem 1rem;
-  background: linear-gradient(180deg, transparent 0%, rgba(255, 102, 0, 0.03) 50%, transparent 100%);
-  border-radius: 20px;
+  gap: 10px;
+  padding: 2rem 1.2rem;
 }
 
 .div1 .colRest .combi {
   flex: 1;
-  min-height: 60px;
+  min-height: 55px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0.8rem;
-  border-radius: 10px;
+  padding: 0.7rem 0.5rem;
+  border-radius: 12px;
   text-align: center;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 
+    0 2px 8px rgba(0, 0, 0, 0.08),
+    0 1px 3px rgba(0, 0, 0, 0.04);
   position: relative;
   overflow: hidden;
 }
@@ -1011,14 +1015,16 @@ margin-top: 1.2rem;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 100%);
+  background: linear-gradient(135deg, rgba(255,255,255,0.25) 0%, transparent 100%);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .div1 .colRest .combi:hover {
-  transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 
+    0 4px 16px rgba(0, 0, 0, 0.12),
+    0 2px 6px rgba(0, 0, 0, 0.06);
 }
 
 .div1 .colRest .combi:hover::before {
