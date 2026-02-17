@@ -898,11 +898,14 @@ margin-top: 1.2rem;
 .div1 .col60 {
   flex: 1;
   min-width: 300px;
-  padding: 2rem 3rem;
+  padding: 2.5rem 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
+  background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(248,249,250,0.8) 100%);
+  border-radius: 12px;
+  box-shadow: inset 0 0 20px rgba(25, 193, 206, 0.05);
 }
 
 /* Línea decorativa sutil a la derecha de col60 */
@@ -950,26 +953,29 @@ margin-top: 1.2rem;
 
 .div1 .col60 h4 {
   font-family: 'Merriweather', serif;
-  font-size: clamp(0.98rem, 1.35vw, 1.12rem);
-  font-weight: 500;
-  color: #222222;
-  line-height: 1.55;
-  margin-bottom: 0.5rem;
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
+  font-weight: 400;
+  color: #1a1a1a;
+  line-height: 1.6;
+  margin-bottom: 0.7rem;
+  max-width: 90%;
 }
 
 .div1 .col60 h5 {
   font-family: 'Poppins', sans-serif;
-  font-size: clamp(0.88rem, 1.2vw, 0.98rem);
+  font-size: clamp(0.9rem, 1.25vw, 1rem);
   font-weight: 600;
-  color: #2c5f63;
-  margin-top: 1.1rem;
+  color: #0f4c5c;
+  margin-top: 1.2rem;
   font-style: normal;
-  padding: 0.9rem 1.6rem;
-  background: linear-gradient(135deg, rgba(25, 193, 206, 0.1) 0%, rgba(255, 102, 0, 0.05) 100%);
+  padding: 1rem 1.8rem;
+  background: linear-gradient(135deg, rgba(25, 193, 206, 0.15) 0%, rgba(255, 102, 0, 0.08) 100%);
   border-radius: 8px;
-  border-left: 3px solid #19C1CE;
-  box-shadow: 0 3px 12px rgba(25, 193, 206, 0.1);
-  letter-spacing: 0.02em;
+  border-left: 4px solid #19C1CE;
+  box-shadow: 0 4px 15px rgba(25, 193, 206, 0.15);
+  letter-spacing: 0.01em;
+  max-width: 95%;
+  text-align: left;
 }
 
 /* Columna derecha - Tarjetas de servicios */
