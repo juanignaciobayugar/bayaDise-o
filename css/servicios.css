@@ -1300,7 +1300,8 @@ margin-top: 1.2rem;
   }
 }
 
-@media (max-width: 400px) {
+/* Tarjetas ocupan ancho completo en pantallas pequeñas (celulares) */
+@media (max-width: 470px) {
   .div1 {
     padding: 1.5rem 0.8rem;
   }
@@ -1308,16 +1309,19 @@ margin-top: 1.2rem;
   .div1 .colRest {
     grid-template-columns: 1fr;
     gap: 8px;
+    width: 100%;
   }
   
   .div1 .colRest .combi {
     min-height: 55px;
     flex-direction: row;
     gap: 0.5rem;
+    width: 100%;
+    border-radius: 8px;
   }
   
   .div1 .colRest .combi h2 {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
 }
 
