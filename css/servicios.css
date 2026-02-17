@@ -524,8 +524,49 @@ font-size: clamp(0.95rem, 1.9vw, 1.3rem);
   background: linear-gradient(135deg, #FFC72C 0%, #FFB700 100%);
 }
 
+/* Responsive para Sesion Bombon - cada div en su propia fila */
+@media (max-width: 900px) {
+  .contenedorBombon {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+  }
+  
+  .imagenPrincipalBombon {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  
+  .imagenPrincipalBombon .contenedorImagen {
+    height: auto;
+    max-height: 20rem;
+  }
+  
+  .imagenDescripcion {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  
+  .imagenDescripcion .contenedorImagen {
+    height: auto;
+    max-height: 15rem;
+  }
+  
+  .col303 {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .indexContact {
+    height: auto;
+    min-height: 20rem;
+    padding: 2rem 1.5rem;
+  }
+}
 
-/* TERCER DIV*/ 
+/* TERCER DIV*/
 
 .tercdivS{   
 text-align: center;
