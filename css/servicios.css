@@ -353,64 +353,79 @@ font-size: clamp(0.95rem, 1.9vw, 1.3rem);
 /*sector bombon - bloque unificado sin apariencia de tarjeta*/
 
 .contenedorBombon {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1rem;
   padding: 3rem 2rem;
   width: 100%;
   background: transparent;
 }
 
 .imagenPrincipalBombon {
-  display: block;
-  width: 100%;
-  margin-bottom: 2rem;
-  clear: both;
+  flex: 1 1 45%;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .imagenPrincipalBombon .contenedorImagen {
   width: 100%;
-  display: block;
+  height: 23rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: transparent;
   padding: 1rem;
 }
 
 .imagenPrincipalBombon img {
-  display: block;
   max-width: 100%;
+  max-height: 100%;
+  width: auto;
   height: auto;
-  margin: 0 auto;
   object-fit: contain;
   border-radius: 0;
   box-shadow: none;
 }
 
 .imagenDescripcion {
-  display: block;
-  width: 100%;
-  margin-bottom: 2rem;
-  clear: both;
+  flex: 1 1 25%;
+  min-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .imagenDescripcion .contenedorImagen {
   width: 100%;
-  display: block;
+  height: 23rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: transparent;
   padding: 1rem;
 }
 
 .imagenDescripcion img {
-  display: block;
   max-width: 100%;
+  max-height: 100%;
+  width: auto;
   height: auto;
-  margin: 0 auto;
   object-fit: contain;
   border-radius: 0;
   box-shadow: none;
 }
 
 .col303{ 
-  display: block;
-  width: 100%;
-  clear: both;
+  flex: 1 1 20%;
+  min-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .col303 h4{
@@ -528,47 +543,24 @@ font-size: clamp(0.95rem, 1.9vw, 1.3rem);
   background: linear-gradient(135deg, #FFC72C 0%, #FFB700 100%);
 }
 
-/* Responsive para pantallas medianas y móviles */
+/* Responsive para móviles */
 @media (max-width: 768px) {
   .contenedorBombon {
-    padding: 1.5rem 1rem;
-    gap: 1.5rem;
+    padding: 2rem 1rem;
+    gap: 2rem;
   }
   
-  .imagenPrincipalBombon .contenedorImagen {
-    max-height: 20rem;
+  .imagenPrincipalBombon,
+  .imagenDescripcion,
+  .col303 {
+    flex: 1 1 100%;
+    min-width: auto;
   }
   
+  .imagenPrincipalBombon .contenedorImagen,
   .imagenDescripcion .contenedorImagen {
-    max-height: 16rem;
-  }
-  
-  .indexContact {
-    min-height: 20rem;
-    padding: 2rem 1.5rem;
-  }
-}
-
-/* Responsive para móviles pequeños */
-@media (max-width: 480px) {
-  .contenedorBombon {
-    padding: 1rem 0.8rem;
-    gap: 1rem;
-  }
-  
-  .imagenPrincipalBombon .contenedorImagen {
-    max-height: 16rem;
-    padding: 0.5rem;
-  }
-  
-  .imagenDescripcion .contenedorImagen {
-    max-height: 12rem;
-    padding: 0.5rem;
-  }
-  
-  .indexContact {
-    min-height: 18rem;
-    padding: 1.5rem 1rem;
+    height: auto;
+    max-height: 25rem;
   }
 }
 
