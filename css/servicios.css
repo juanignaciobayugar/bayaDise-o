@@ -424,6 +424,27 @@ font-size: clamp(0.95rem, 1.9vw, 1.3rem);
   justify-content: center;
 }
 
+/* Responsive: cambiar a columna en pantallas menores a 1200px */
+@media (max-width: 1200px) {
+  .contenedorBombon {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .imagenPrincipalBombon,
+  .imagenDescripcion,
+  .col303 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  
+  .imagenPrincipalBombon .contenedorImagen,
+  .imagenDescripcion .contenedorImagen {
+    height: auto;
+    max-height: 25rem;
+  }
+}
+
 .col303 h4{
   display: flex;
   text-align: center;
@@ -539,53 +560,7 @@ font-size: clamp(0.95rem, 1.9vw, 1.3rem);
   background: linear-gradient(135deg, #FFC72C 0%, #FFB700 100%);
 }
 
-/* Responsive para Sesion Bombon - tablet y mobile */
-@media (max-width: 1024px) {
-  .contenedorBombon {
-    flex-direction: column;
-    padding: 2rem 1.5rem;
-    gap: 2rem;
-  }
-  
-  .imagenPrincipalBombon {
-    flex: 0 0 auto;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .imagenPrincipalBombon .contenedorImagen {
-    height: auto;
-    max-height: 25rem;
-  }
-  
-  .imagenDescripcion {
-    flex: 0 0 auto;
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  
-  .imagenDescripcion .contenedorImagen {
-    height: auto;
-    max-height: 20rem;
-  }
-  
-  .col303 {
-    flex: 0 0 auto;
-    width: 100%;
-    max-width: 450px;
-    margin: 0 auto;
-  }
-  
-  .indexContact {
-    height: auto;
-    min-height: 22rem;
-    padding: 2.5rem 2rem;
-  }
-}
-
-/* Responsive para pantallas medianas */
+/* Responsive para pantallas medianas y móviles */
 @media (max-width: 768px) {
   .contenedorBombon {
     padding: 1.5rem 1rem;
