@@ -1084,21 +1084,21 @@ margin-top: 1.2rem;
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: repeat(3, max-content);
-  gap: 6%;
+  gap: 8%;
   width: 100%;
   justify-content: center;
-  padding: 3rem 2rem;
+  padding: 4rem 2rem;
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f0f4f8 100%);
   border-top: 2px solid rgba(25, 193, 206, 0.2);
   border-bottom: 2px solid rgba(255, 102, 0, 0.2);
 }
 
 .div2 .card {
-  width: 19rem;
-  min-height: 26rem;
+  width: 22rem;
+  min-height: 28rem;
   background: white;
   border-radius: 16px;
-  padding: 2rem 1.5rem;
+  padding: 2.5rem 2rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
@@ -1138,9 +1138,9 @@ margin-top: 1.2rem;
 
 .div2 .card-img {
   width: 100%;
-  max-width: 220px;
+  max-width: 260px;
   height: auto;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
