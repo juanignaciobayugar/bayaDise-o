@@ -402,7 +402,7 @@ font-size: clamp(0.95rem, 1.9vw, 1.3rem);
 
 .imagenDescripcion .contenedorImagen {
   width: 100%;
-  height: 23rem;
+  height: 22rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -551,17 +551,34 @@ font-size: clamp(0.95rem, 1.9vw, 1.3rem);
   }
   
   .imagenPrincipalBombon,
-  .imagenDescripcion,
+  
   .col303 {
     flex: 1 1 100%;
     min-width: auto;
   }
+
+.imagenDescripcion{
+      flex: 1 1 100%;
+    min-width: auto;
+
+}
+
+.imagenDescripcion img{
+width: 80%;
+}
+
   
-  .imagenPrincipalBombon .contenedorImagen,
-  .imagenDescripcion .contenedorImagen {
+  .imagenPrincipalBombon .contenedorImagen{
     height: auto;
     max-height: 25rem;
   }
+
+ .imagenDescripcion .contenedorImagen {
+    height: auto;
+    max-height: 25rem;
+  }
+
+
 }
 
 /* TERCER DIV*/
@@ -642,6 +659,93 @@ margin-top: 1.2rem;
     border-radius: 0.4rem;
     color: white;
 }
+
+
+/* div principal de contacto*/
+
+.contactoPrincipal {
+display: flex; 
+height: 100vh; /* o la altura que quieras */
+flex-direction: row; /* explícito, aunque row es el valor por defecto */
+}
+
+
+.promoImagenContacto {
+position: relative; /* referencia para posicionar elementos internos */
+display: flex; 
+flex-direction: column; /* apila los hijos en vertical */ 
+height: 70vh; /* o la altura que quieras para el contenedor */
+width: 68%; /* ocupa 68% del ancho */
+}
+
+.mide15Porciento {
+height: 26%; 
+background:white; /* solo para visualizar */
+position: relative;
+}
+
+.contacto40off {
+  width: 14rem;
+}
+
+
+.mide60Porciento {
+height: 54%; 
+background:#B81A19 /* solo para visualizar */
+}
+
+.mide60Porciento h2{
+  font-family: 'Lato', serif;
+  font-size: 2.3rem;
+  margin-left: 0.4rem;
+}
+
+
+.mide60Porciento h5{
+  font-family: 'Lato', serif;
+  font-size: 1.35rem;
+  margin-left: 0.4rem;
+}
+
+
+.mide20Porciento {
+height: 20%;
+background:white; /* solo para visualizar */
+}
+
+.contactoLaLoca { 
+  position: absolute; 
+  bottom: 0; /* pegada al borde inferior */ 
+  right: 0; /* pegada al borde derecho */ 
+  width: 26.4rem; /* tamaño de ejemplo, ajusta según necesites */ height: auto; 
+}
+
+.cuestionarioContactoPrincipal {
+display: flex; 
+flex-direction: column; /* apila los hijos en vertical */ 
+height: 70vh; /* o la altura que quieras para el contenedor */
+width: 32%; /* ocupa 68% del ancho */
+background-color:#250709;
+padding: 2rem;
+}
+
+
+.cuestionarioContactoPrincipal h2{
+  color: white;
+
+}
+
+.cuestionarioContactoPrincipal h4{
+  color: white;
+
+}
+
+
+.cuestionarioContactoPrincipal h5{
+  color: white;
+}
+
+
 
 
 /* CUARTO DIV */ 
@@ -838,66 +942,7 @@ margin-top: 1.2rem;
   }
 }
 
-/* Imagen arriba derecha - con animación continua suave y overlay */
-.imagen-superior {
-  position: absolute; 
-  bottom: 0;
-  right: 5%;
-  width: clamp(120px, 18%, 200px);
-  z-index: 1;
-  animation: flotar 5s ease-in-out infinite;
-  pointer-events: none;
-}
 
-.imagen-superior img {
-  width: 100%;
-  height: auto;
-  display: block;
-  opacity: 0.85;
-  filter: brightness(1.05) contrast(0.95);
-}
-
-/* Overlay blanco semi-transparente sobre la imagen */
-.imagen-superior::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.05) 0%,
-    rgba(255, 255, 255, 0.05) 80%,
-    rgba(255, 255, 255, 0.1) 20%
-  );
-  pointer-events: none;
-  border-radius: 4px;
-}
-
-/* Animación continua de flotación más suave y lenta */
-@keyframes flotar {
-  0%, 100% {
-    transform: translateY(0) rotate(0deg);
-  }
-  33% {
-    transform: translateY(-5px) rotate(0.5deg);
-  }
-  66% {
-    transform: translateY(-3px) rotate(-0.5deg);
-  }
-}
-
-@media (max-width: 1200px) {
-  .cuartdivS {
-    padding-bottom: 120px;
-  }
-
-  .imagen-superior {
-    right: 3%;
-    width: 150px;
-  }
-}
 
 /* Responsive para pantallas menores a 700px */
 @media (max-width: 700px) {
@@ -997,11 +1042,6 @@ margin-top: 1.2rem;
     box-sizing: border-box;
   }
   
-  .imagen-superior {
-    width: 100px;
-    right: 2%;
-  }
-
   /* Input sección */
   .inputSer {
     width: 95%;
@@ -1602,11 +1642,6 @@ margin-top: 1.2rem;
   .ultimoSer1 {
     padding: 1.5rem 0.5rem;
     width: 100%;
-  }
-
-  .imagen-superior {
-    width: 80px;
-    right: 2%;
   }
 
   .titulo4to {

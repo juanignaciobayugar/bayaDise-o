@@ -182,8 +182,8 @@ Estructura en dos niveles:
 
 ---
 
-## Regla de Commits por Tarea
-- Cada tarea realizada debe terminar en un commit independiente que describa el propósito y el resultado (el "por qué" de la tarea).
+## Reg por Tarea
+la de Commits- Cada tarea realizada debe terminar en un commit independiente que describa el propósito y el resultado (el "por qué" de la tarea).
 - El mensaje de commit debe ser claro y breve (máximo 60-72 caracteres en el subject) y reflejar el objetivo de la tarea.
 - Recomendación de formato de mensaje (uno de estos):
 -   - `feat: ...` para nueva funcionalidad o mejora significativa
@@ -192,7 +192,7 @@ Estructura en dos niveles:
 -   - `chore: ...` para cambios de mantenimiento sin impacto de funcionalidad
 - El cuerpo del commit debe incluir contexto básico, motivos y forma de verificación (parámetros de prueba o pasos de verificación).
 - Evitar commits que contengan secretos o información sensible.
-- Mantener un historial legible y atómico: los commits deben ser poder desambiguar cambios lógicamente independientes.
+- Mantener un historial legible y atómico: los commits deben ser poder desambigar cambios lógicamente independientes.
 - Se recomienda agrupar todos los cambios de una tarea en su propio commit y no mezclar cambios de tareas distintas.
 - Si se trabajan en varias correcciones pequeñas, considerar commits de tipo `fix` secuenciales por cada corrección.
 - En caso de requerir revertir, preferir `revert:` con referencia al commit anterior y el motivo.
