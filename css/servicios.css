@@ -2056,51 +2056,62 @@ gap: 0.8rem;
 
 .contenedorAboutUs { 
   display: grid; 
-  grid-template-columns: 20% 80%; /* imagen y párrafo */ 
+  grid-template-columns: 13% 87%; /* imagen y párrafo */ 
   grid-template-rows: auto 1fr; /* portada arriba, luego contenido */ 
-  gap: 10px; height: 100vh; /* ejemplo: toda la pantalla */ 
-}
- /* Portada ocupa toda la primera fila */
- .portada { 
-  grid-column: 1 / 3; /* se extiende por ambas columnas */ 
-  background: #ccc; 
-  text-align: center; 
-  padding: 20px; 
-  position: relative; /* permite posicionar elementos internos */
+  gap: 0; 
+  min-height: 80vh;
 }
 
-.portada img { 
-  width: 100%; /* la imagen se adapta al ancho del div */
-   height: auto; /* mantiene proporción */ 
-   display: block; /* elimina espacios indeseados */ 
+  /* Portada ocupa toda la primera fila */
+  .portada { 
+    grid-column: 1 / 3; /* se extiende por ambas columnas */ 
+    background: #555555; 
+    text-align: center; 
+    padding: 0.3rem;
+    position: relative;
+  }
+
+  .portada img { 
+    width: 100%;
+    height: auto;
+    display: block;
   }
 
   .portada h1 { 
-    position: absolute; /* se coloca encima de la imagen */
-    top: 50%; /* centrado vertical */ 
-    left: 50%; /* centrado horizontal */ 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
     transform: translate(-50%, -50%); 
-    color: white; /* contraste sobre la imagen */
-    font-family: 'Montserrat', serif;; 
-    font-size: 2.5rem; 
-     text-shadow: 2px 2px 5px rgba(0,0,0,0.7); /* mejora legibilidad */ 
-    }
+    color: white; 
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 5rem; 
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7); 
+    margin: 0;
+  }
 
+  
   
     
     /* Imagen ocupa la segunda fila, primera columna */ 
     .conteineImagen { 
       grid-column: 1; 
       grid-row: 2; 
-      background: #eee;
-      display: flex; /* Para controlar alineación interna */ 
-      justify-content: center; /* Centra horizontalmente */ 
-      align-items: center; /* Centra verticalmente */ 
+      background: #fafafa;
+      display: flex; 
+      justify-content: flex-start; 
+      align-items: flex-start; 
+      padding: 2rem 1rem;
     } 
+
+    .imagenFotoAbout {
+      width: 100%;
+    }
+
     .imagenFotoAbout img { 
-      display: block; /* Elimina espacios extra */
-      max-width: 100%; /* Evita que se desborde */ 
-      height: auto; /* Mantiene proporción */ 
+      display: block; 
+      max-width: 100%; 
+      width: 100%;
+      height: auto; 
     }
     
     
@@ -2112,25 +2123,77 @@ gap: 0.8rem;
       grid-column: 2; 
       grid-row: 2; 
       background: #fafafa; 
-      padding: 20px; 
+      padding: 2rem 2rem 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     
     .contieneParrafoAbout h1{
        font-family: 'STIX Two Text', serif;
-  
+       font-size: 2rem;
+       margin: 0 0 1rem 0;
+       color: #333;
     }
   
      .contieneParrafoAbout h3{
-        font-family:'TASA Explorer', sans-serif; /* Sans serif libre */ 
+        font-family: 'TASA Explorer', sans-serif;
+        font-size: 1.3rem;
+        line-height: 1.7;
+        color: #333;
+        margin: 0;
+        font-weight: 400;
     }
-    
-    
-    
-    
-    
-    
 
-
+/* Responsive About Us */
+@media (max-width: 768px) {
+  .contenedorAboutUs {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    min-height: auto;
+  }
+  
+  .portada {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 0.2rem;
+    background: #555555;
+  }
+  
+  .portada h1 {
+    font-size: 3rem;
+    white-space: nowrap;
+  }
+  
+  .conteineImagen {
+    grid-column: 1;
+    grid-row: 2;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1.5rem;
+    text-align: left;
+  }
+  
+  .imagenFotoAbout {
+    width: 80%;
+    text-align: left;
+  }
+  
+  .contieneParrafoAbout {
+    grid-column: 1;
+    grid-row: 3;
+    padding: 1rem 1.5rem;
+    text-align: left;
+  }
+  
+  .contieneParrafoAbout h1 {
+    font-size: 1.5rem;
+  }
+  
+  .contieneParrafoAbout h3 {
+    font-size: 0.95rem;
+  }
+}
 
 
 
