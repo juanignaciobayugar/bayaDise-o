@@ -2075,51 +2075,60 @@ gap: 0.8rem;
    display: block; /* elimina espacios indeseados */ 
   }
 
-  .portada h1 { position: absolute; /* se coloca encima de la imagen */
+  .portada h1 { 
+    position: absolute; /* se coloca encima de la imagen */
     top: 50%; /* centrado vertical */ 
     left: 50%; /* centrado horizontal */ 
     transform: translate(-50%, -50%); 
     color: white; /* contraste sobre la imagen */
-     font-size: 2.5rem; 
+    font-family: 'Montserrat', serif;; 
+    font-size: 2.5rem; 
      text-shadow: 2px 2px 5px rgba(0,0,0,0.7); /* mejora legibilidad */ 
     }
 
-
-
-
-/* Imagen ocupa la segunda fila, primera columna */ 
-.conteineImagen { 
-  grid-column: 1; 
-  grid-row: 2; 
-  background: #eee;
-display: flex; /* Para controlar alineación interna */ 
-justify-content: center; /* Centra horizontalmente */ 
-align-items: center; /* Centra verticalmente */ 
-} 
-.imagenFotoAbout img { 
-  display: block; /* Elimina espacios extra */
-   max-width: 100%; /* Evita que se desborde */ 
-   height: auto; /* Mantiene proporción */ 
-  }
-
-
-
-
-
-/* Párrafo ocupa la segunda fila, segunda columna */
-.contieneParrafoAbout { 
-  grid-column: 2; 
-  grid-row: 2; 
-  background: #fafafa; 
-  padding: 20px; 
-}
-
-
-
-
-
-
-
+  
+    
+    /* Imagen ocupa la segunda fila, primera columna */ 
+    .conteineImagen { 
+      grid-column: 1; 
+      grid-row: 2; 
+      background: #eee;
+      display: flex; /* Para controlar alineación interna */ 
+      justify-content: center; /* Centra horizontalmente */ 
+      align-items: center; /* Centra verticalmente */ 
+    } 
+    .imagenFotoAbout img { 
+      display: block; /* Elimina espacios extra */
+      max-width: 100%; /* Evita que se desborde */ 
+      height: auto; /* Mantiene proporción */ 
+    }
+    
+    
+    
+    
+    
+    /* Párrafo ocupa la segunda fila, segunda columna */
+    .contieneParrafoAbout { 
+      grid-column: 2; 
+      grid-row: 2; 
+      background: #fafafa; 
+      padding: 20px; 
+    }
+    
+    .contieneParrafoAbout h1{
+       font-family: 'STIX Two Text', serif;
+  
+    }
+  
+     .contieneParrafoAbout h3{
+        font-family:'TASA Explorer', sans-serif; /* Sans serif libre */ 
+    }
+    
+    
+    
+    
+    
+    
 
 
 
