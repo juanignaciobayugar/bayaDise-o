@@ -2439,3 +2439,65 @@ footer p {
     font-size: 0.75rem;
   }
 }
+
+
+
+.contenedorPreguntas {
+display: flex; /* Activa flexbox */ 
+flex-direction: column; /* Los hijos se apilan en columna */ 
+justify-content: center; /* Centra verticalmente */ 
+align-items: center; /* Centra horizontalmente */ 
+}
+
+
+.h1Preguntas h1{
+font-family: 'Zalando Sans', sans-serif;
+color: #09096c;
+font-weight: 100;
+}
+
+.h1Preguntas .tituloPreguntas {
+font-weight: 520;
+}
+
+
+
+/*PRUEBA GANCHITO*/
+.clip-container {
+  display: flex; 
+  align-items: center; /* opcional: alinea verticalmente */
+  position: relative;
+  width: 72%;
+  background: #2a2a2a; 
+  border: 1px solid #ccc; 
+  margin: 60px auto; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+  padding: 1em; 
+  border-radius: 28px;
+} 
+/* Imagen del clip */ 
+  
+  .clip {
+       position: absolute;
+       top: -20px; /* ajusta según el tamaño */ 
+        right: 10px; /* esquina superior izquierda */
+         width: 60px; /* tamaño del clip */ 
+         pointer-events: none; /* que no interfiera con clics */ 
+        }
+.clip-container {
+   display: flex; 
+   align-items: baseline; /* alinea los textos por la línea base */
+   }
+
+ .clip-container h2{
+  font-weight:bold; /* el texto por defecto */
+  color: white; 
+  font-size: 1.2rem;
+  }
+
+   h2 .destacado { 
+    font-weight: normal; /* más negrita */ 
+    color: white; /* color más fuerte */ 
+    font-size: 1.2rem;;
+    }
+    
